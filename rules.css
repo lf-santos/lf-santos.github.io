@@ -22,6 +22,7 @@ td {
   padding-right: 1em;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
+  background-color: white;
 }
 th {
   border-left: 1px solid #ddd;
@@ -32,8 +33,8 @@ th {
   cursor: pointer;
   background-color: gray;
 }
-tr:hover {
-  /* Add a grey background color to the table header and on hover */
+td:hover,
+th:hover {
   background-color: #f1f1f1;
 }
 em {
