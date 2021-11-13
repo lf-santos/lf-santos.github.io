@@ -1,3 +1,29 @@
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+thead {
+  font-size: larger;
+  font-weight: bold;
+}
+table {
+  text-align: center;
+  vertical-align: center;
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+}
+tr {
+  border-bottom: 1px solid #ddd;
+}
+td {
+  border-left: 1px solid #ddd;
+  padding: 0.5em;
+}
+tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
 em {
   color: red;
   font-style: bold;
@@ -67,4 +93,37 @@ img {
   border: 1px blue solid;
   padding: 0.1em;
   margin: 0.1em;
+}
+
+/* Style all font awesome icons */
+.fa {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa.fa-instagram {
+  color: transparent;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
 }
