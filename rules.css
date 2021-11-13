@@ -27,6 +27,13 @@ img {
 }
 #top_sec {
   font-size: large;
+  margin: 1em;
+}
+.projects {
+  margin: 1em;
+}
+.publications {
+  margin: 1em;
 }
 #initial_explanation {
   margin-left: 30%;
@@ -35,28 +42,16 @@ img {
 #highlighted {
   background-color: yellow;
 }
-#top_sec a:link {
-  color: red;
-}
-#top_sec a:visited {
-  color: green;
-}
-#top_sec a:hover {
-  color: hotpink;
-}
-#top_sec a:active {
-  color: blue;
-}
-nav {
+.nav {
   background-color: lightgray;
   height: 3em;
 }
-nav ul {
+.nav ul {
   padding: 0;
   margin-left: 0;
   float: left;
 }
-nav li {
+.nav li {
   vertical-align: middle;
   list-style-type: none;
   padding-left: 0;
