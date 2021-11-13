@@ -18,12 +18,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link type="text/css" rel="stylesheet" href="rules.css" />
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext"
       rel="stylesheet"
       type="text/css"
     />
+    <link type="text/css" rel="stylesheet" href="rules.css" />
   </head>
   <body>
     <ul class="nav nav-tabs">
@@ -106,9 +107,9 @@
               "
             />
             <div class="card-body">
-              <h5 class="card-title">
+              <h4 class="card-title">
                 Surrogate-based simulation optimization
-              </h5>
+              </h4>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -130,9 +131,9 @@
             alt="..."><source src="./fig/simOpt.mp4" type="video/mp4"></video>
             -->
             <div class="card-body">
-              <h5 class="card-title">
+              <h4 class="card-title">
                 Direct simulation optimization
-              </h5>
+              </h4>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -147,9 +148,9 @@
           <div class="card text-center h-100" style="width: 18rem">
             <img src="./fig/FIGURE1_new.png" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">
+              <h4 class="card-title">
                 Work and heat exchange networks synthesis
-              </h5>
+              </h4>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -164,9 +165,9 @@
           <div class="card text-center h-100" style="width: 18rem">
             <img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">
+              <h4 class="card-title">
                 Nonsolvent-induced Phase Separation (NIPS)
-              </h5>
+              </h4>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -186,16 +187,16 @@
     <hr />
     <div class="publications">
       <h1 id="section_publications">Publications</h1>
-      <table id="pub_tab">
+      <table id="publications_table" class="w3-table-all">
         <thead>
           <tr>
-            <td>Title</td>
-            <td>Citations</td>
-            <td>Year</td>
+            <th>Title</td>
+            <th>Citations</td>
+            <th>Year</td>
           </tr>
         </thead>
         <tbody id="pub_tab_body">
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://pubs.rsc.org/en/content/articlelanding/2019/sm/c9sm00355j/unauth"
@@ -223,7 +224,7 @@
               <span class="gsc_a_h gsc_a_hc gs_ibl">2019</span>
             </td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://www.sciencedirect.com/science/article/abs/pii/S0306261919321294"
@@ -260,7 +261,7 @@
               <span class="gsc_a_h gsc_a_hc gs_ibl">2021</span>
             </td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://link.springer.com/article/10.1007/s43153-021-00111-8"
@@ -274,7 +275,7 @@
             <td class="pub_tab_col">0</td>
             <td class="pub_tab_col">2021</td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://www.sciencedirect.com/science/article/abs/pii/B9780128233771502330"
@@ -288,7 +289,7 @@
             <td class="pub_tab_col">0</td>
             <td class="pub_tab_col">2020</td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://ui.adsabs.harvard.edu/abs/2019APS..MARC25011T/abstract"
@@ -304,7 +305,7 @@
             <td class="pub_tab_col">0</td>
             <td class="pub_tab_col">2019</td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://aiche.confex.com/aiche/2018/meetingapp.cgi/Paper/525637"
@@ -318,7 +319,7 @@
             <td class="pub_tab_col">0</td>
             <td class="pub_tab_col">2018</td>
           </tr>
-          <tr class="pub_tab_row">
+          <tr class="item">
             <td class="pub_tab_col">
               <a
                 href="https://aiche.confex.com/aiche/2017/meetingapp.cgi/Paper/494135"
@@ -348,5 +349,71 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let tid = "#publications_table";
+      let headers = document.querySelectorAll(tid + " th");
+      
+      // Sort the table element when clicking on the table headers
+      headers.forEach(function(element, i) {
+        element.addEventListener("click", function() {
+          w3.sortHTML(tid, ".item", "td:nth-child(" + (i + 1) + ")");
+        });
+      });
+    </script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
   </body>
 </html>
+<!--
+<script>
+  const table = document.querySelector('table'); //get the table to be sorted
+
+table.querySelectorAll('th') // get all the table header elements
+  .forEach((element, columnNo)=>{ // add a click handler for each 
+    element.addEventListener('click', event => {
+        sortTable(table, columnNo); //call a function which sorts the table by a given column number
+    })
+  })
+function sortTable(table, sortColumn){
+  // get the data from the table cells
+  const tableBody = table.querySelector('tbody')
+  const tableData = table2data(tableBody);
+  // sort the extracted data
+  tableData.sort((a, b)=>{
+    if(a[sortColumn] > b[sortColumn]){
+      return 1;
+    }
+    return -1;
+  })
+  // put the sorted data back into the table
+  data2table(tableBody, tableData);
+}
+// this function gets data from the rows and cells 
+// within an html tbody element
+function table2data(tableBody){
+  const tableData = []; // create the array that'll hold the data rows
+  tableBody.querySelectorAll('tr')
+    .forEach(row=>{  // for each table row...
+      const rowData = [];  // make an array for that row
+      row.querySelectorAll('td')  // for each cell in that row
+        .forEach(cell=>{
+          rowData.push(cell.innerText);  // add it to the row data
+        })
+      tableData.push(rowData);  // add the full row to the table data 
+    });
+  return tableData;
+}
+
+// this function puts data into an html tbody element
+function data2table(tableBody, tableData){
+  tableBody.querySelectorAll('tr') // for each table row...
+    .forEach((row, i)=>{  
+      const rowData = tableData[i]; // get the array for the row data
+      row.querySelectorAll('td')  // for each table cell ...
+        .forEach((cell, j)=>{
+          cell.innerText = rowData[j]; // put the appropriate array element into the cell
+        })
+      tableData.push(rowData);
+    });
+}
+</script>
+-->

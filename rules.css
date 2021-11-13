@@ -18,7 +18,19 @@ tr {
 }
 td {
   border-left: 1px solid #ddd;
-  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+th {
+  border-left: 1px solid #ddd;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  cursor: pointer;
+  background-color: gray;
 }
 tr:hover {
   /* Add a grey background color to the table header and on hover */
