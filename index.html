@@ -10,6 +10,7 @@
       content="some copy that appears on search engine"
     />
     <title>Lucas F. Santos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
@@ -25,26 +26,125 @@
       type="text/css"
     />
     <link type="text/css" rel="stylesheet" href="rules.css" />
+    <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </head>
   <body>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="about.html">About me</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section_projects"><i class="fa fa-fw fa-laptop"></i> Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#section_publications"><i class="fa fa-fw fa-book"></i> Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mailto:lfs.francisco.95@gmail.com"><i class="fa fa-fw fa-envelope"></i> Contat me</a>
-      </li>
-    </ul>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <!--<a href="#" class="navbar-brand"><img src="/fig/graphical_abstract_appEnergy2021.png" alt=""></a>
+        -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_projects"><i class="fa fa-fw fa-laptop"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section_publications"><i class="fa fa-fw fa-book"></i> Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:lfs.francisco.95@gmail.com"><i class="fa fa-fw fa-envelope"></i> Contat me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- IMAGE SLIDER -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#slides" data-slide-to="0" class="active"></li>
+        <li data-target="#slides" data-slide-to="1"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="fig/graphical_abstract_appEnergy2021.png" alt="Surrogate-based simulation optimization">
+          <div class="carousel-caption">
+            <h1 class="display-2">Surrogate-based Simulation Optimization</h1>
+            <h3>Very nive research topic</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">Learn more!</button>
+            <button type="button" class="btn btn-primary btn-lg">Contact us!</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="fig/FIGURE1_new.png" alt="Direct simulation optimization">
+          <div class="carousel-caption">
+            <h1 class="display-2">Direct Simulation Optimization</h1>
+            <h3>Very nive research topic</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">Learn more!</button>
+            <button type="button" class="btn btn-primary btn-lg">Contact us!</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="fig/pareto.png" alt="Multi-objective simulation optimization">
+          <div class="carousel-caption">
+            <h1 class="display-2">Multi-objective Simulation Optimization</h1>
+            <h3>Very nive research topic</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">Learn more!</button>
+            <button type="button" class="btn btn-primary btn-lg">Contact us!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- JUMBOTRON -->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+          <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, blanditiis cupiditate. Tempore, commodi repellat accusamus explicabo quaerat nulla voluptas architecto ea doloremque sunt itaque! Neque temporibus delectus sapiente repellendus ullam similique libero fugit quae. Aspernatur laborum nulla assumenda error culpa, doloremque distinctio porro illum, quod corrupti nobis ut enim delectus!</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+          <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Learn more!</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- WELCOME SECTION -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <div class="col-12">
+          <h1 class="display-4">About me</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque aut, neque iusto vero officia dolor praesentium laboriosam consectetur ipsam tempora.</p>
+        </div>
+      </div>
+    </div>
+    <!-- 3-COLUMN SECTION -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-code"></i>
+            <h3>HTML5</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, iure?</p>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-bold"></i>
+            <h3>Bootstrap</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, iure?</p>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <i class="fab fa-css3"></i>
+            <h3>CSS</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, iure?</p>
+          </div>
+      </div>
+      <hr class="my-4">
+    </div>
 
+    <!-- ABOUT ME SECTION -->
     <div id="top_sec">
       <h1>About me</h1>
-      <img src="fig/perfil.jpg" alt="Image of Lucas F. Santos" />
+      <img id="profile_fig" src="fig/perfil.jpg" alt="Image of Lucas F. Santos" />
       <a
         href="http://instagram.com/lucas.francisco.s"
         target="blank"
@@ -363,57 +463,3 @@
     <script src="https://www.w3schools.com/lib/w3.js"></script>
   </body>
 </html>
-<!--
-<script>
-  const table = document.querySelector('table'); //get the table to be sorted
-
-table.querySelectorAll('th') // get all the table header elements
-  .forEach((element, columnNo)=>{ // add a click handler for each 
-    element.addEventListener('click', event => {
-        sortTable(table, columnNo); //call a function which sorts the table by a given column number
-    })
-  })
-function sortTable(table, sortColumn){
-  // get the data from the table cells
-  const tableBody = table.querySelector('tbody')
-  const tableData = table2data(tableBody);
-  // sort the extracted data
-  tableData.sort((a, b)=>{
-    if(a[sortColumn] > b[sortColumn]){
-      return 1;
-    }
-    return -1;
-  })
-  // put the sorted data back into the table
-  data2table(tableBody, tableData);
-}
-// this function gets data from the rows and cells 
-// within an html tbody element
-function table2data(tableBody){
-  const tableData = []; // create the array that'll hold the data rows
-  tableBody.querySelectorAll('tr')
-    .forEach(row=>{  // for each table row...
-      const rowData = [];  // make an array for that row
-      row.querySelectorAll('td')  // for each cell in that row
-        .forEach(cell=>{
-          rowData.push(cell.innerText);  // add it to the row data
-        })
-      tableData.push(rowData);  // add the full row to the table data 
-    });
-  return tableData;
-}
-
-// this function puts data into an html tbody element
-function data2table(tableBody, tableData){
-  tableBody.querySelectorAll('tr') // for each table row...
-    .forEach((row, i)=>{  
-      const rowData = tableData[i]; // get the array for the row data
-      row.querySelectorAll('td')  // for each table cell ...
-        .forEach((cell, j)=>{
-          cell.innerText = rowData[j]; // put the appropriate array element into the cell
-        })
-      tableData.push(rowData);
-    });
-}
-</script>
--->
