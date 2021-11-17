@@ -1,48 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+html,
 body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  padding-top: 2.4rem;
+}
+.navbar {
+  padding: 1rem;
+}
+.navbar-nav li {
+  padding-right: 1.4em;
+}
+.nav-link {
+  font-size: 1.2em !important;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  background-size: cover;
+  background-color: white;
+  background-position: center center;
+  opacity: 0.3;
+  padding: 1rem;
+}
+.carousel-caption {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-100%);
+  color: black;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  float: left;
+  width: 10%;
+  height: 10px;
+  margin: 0.1rem;
+  border-radius: 10px;
+  border-color: blue;
+  border: 10px;
+  background: black;
+}
+.carousel-indicators li.active {
+  background: blue;
+}
+.carousel-caption h1 {
+  font-size: 300%;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: black;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3 {
+  font-size: 250%;
+  font-weight: 400;
+  color: black;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
+.btn-outline-dark {
+  background-color: mediumseagreen;
+  border: 1px solid darkgray;
+}
+.jumbotron {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border-radius: 0;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 0rem;
+}
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.fa-code {
+  color: #e54d26;
+}
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2163af;
+}
+.fa-code,
+.fa-bold,
+.fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  background: -webkit-radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+.fa-youtube {
+  color: #bb0000;
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-github:hover,
+.ai-orcid:hover,
+.ai-google-scholar-square:hover {
+  color: #d5d5d5 !important;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-90 {
+  border-top: 1px solid #d5d5d5;
+  width: 90%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 55%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 60%;
+  }
+  .carousel-caption h1 {
+    font-size: 220%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0 !important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url("img/mac.png");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+.container-fluid {
   max-width: 1000px;
   margin: auto;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 120%;
+  max-width: 100%;
+}
+footer h5 {
+  font-size: 150%;
+}
+#top_section a {
+  padding: 3rem;
+}
+.img_profile {
+  width: 20em;
+  margin: 0 auto;
+  margin: 10px;
+  border-radius: 50px;
+  background-image: url(http://pawelskowronek.me/images/profile.jpg);
+  box-shadow: 0px 0px 20px black;
+}
+ul.li-2col-lg {
+  padding-left: 3rem;
+  font-size: 110%;
+}
+.ul-2col-lg {
+  padding-bottom: 0;
 }
 thead {
   font-size: larger;
   font-weight: bold;
 }
 table {
-  text-align: center;
-  vertical-align: center;
   border-collapse: collapse; /* Collapse borders */
   width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
+  border: 2px solid #ddd; /* Add a grey border */
 }
 tr {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 td {
-  border-left: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 120%;
+  padding: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  background-color: white;
+}
+.pub_tab_col {
+  text-align: center;
+  vertical-align: center;
 }
 th {
-  border-left: 1px solid #ddd;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  border: 1px solid #ddd;
   cursor: pointer;
   background-color: gray;
+  margin: auto;
+  font-size: 140%;
+  text-align: center;
+  vertical-align: center;
+  padding: 0.5em;
 }
 td:hover,
 th:hover {
   background-color: #f1f1f1;
 }
-em {
-  color: red;
-  font-style: bold;
-}
-img {
-  width: 200px;
+.profile_fig {
+  width: 400px;
   border-radius: 50px;
   float: left;
   margin-right: 10px;
@@ -57,7 +365,7 @@ img {
   font-weight: bold;
 }
 .code_fig {
-  width: 200px;
+  width: 400px;
   height: 200px;
   object-fit: cover;
   border-radius: 0px;
@@ -78,9 +386,6 @@ img {
   margin-left: 30%;
   margin-right: 30%;
 }
-#highlighted {
-  background-color: yellow;
-}
 .nav {
   background-color: lightgray;
   height: 3em;
@@ -97,46 +402,14 @@ img {
   display: inline;
   margin-left: 0.5em;
 }
-#button_top {
-  border-color: orange;
+.button_top {
   position: fixed;
-  top: 95%;
+  top: 90%;
   left: 95%;
-  width: 1em;
-  border: 1px blue solid;
+  border: 2px bisque solid;
+  background-color: darkslategrey;
   padding: 0.1em;
   margin: 0.1em;
-}
-
-/* Style all font awesome icons */
-.fa {
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa.fa-instagram {
-  color: transparent;
-  background: radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background: -webkit-radial-gradient(
-    circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #fd5949 45%,
-    #d6249f 60%,
-    #285aeb 90%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
+  font-size: 2em;
+  color: wheat;
 }
