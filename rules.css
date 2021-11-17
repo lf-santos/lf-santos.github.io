@@ -60,6 +60,24 @@ body {
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
 }
+#slides {
+  background-color: white;
+}
+#jumbotron {
+  background-color: #a9a9a9;
+}
+#about_me {
+  background-color: #f0f0f0;
+}
+#projects {
+  background-color: #dcdcdc;
+}
+#publications {
+  background-color: #f8f8f8;
+}
+#contact {
+  background-color: #dcdcdc;
+}
 .btn-primary {
   background-color: #6648b1;
   border: 1px solid #563d7c;
@@ -349,58 +367,11 @@ td:hover,
 th:hover {
   background-color: #f1f1f1;
 }
-.profile_fig {
-  width: 400px;
-  border-radius: 50px;
-  float: left;
-  margin-right: 10px;
-}
-.project_img {
-  width: 400px;
-  border-radius: 0px;
-  float: left;
-  margin: 10px;
-}
-.user_name {
-  font-weight: bold;
-}
-.code_fig {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 0px;
-  float: right;
-  margin: 1em;
-}
-#top_sec {
-  font-size: large;
-  margin: 1em;
-}
 .projects {
   margin: 1em;
 }
 .publications {
   margin: 1em;
-}
-#initial_explanation {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-.nav {
-  background-color: lightgray;
-  height: 3em;
-}
-.nav ul {
-  padding: 0;
-  margin-left: 0;
-  float: left;
-}
-.nav li {
-  vertical-align: middle;
-  list-style-type: none;
-  padding-left: 0;
-  display: inline;
-  margin-left: 0.5em;
 }
 .button_top {
   position: fixed;
