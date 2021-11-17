@@ -5,6 +5,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  padding-top: 2.4rem;
 }
 .navbar {
   padding: 1rem;
@@ -23,6 +24,7 @@ body {
   background-color: white;
   background-position: center center;
   opacity: 0.3;
+  padding: 1rem;
 }
 .carousel-caption {
   position: fixed;
@@ -71,7 +73,8 @@ body {
   border: 1px solid darkgray;
 }
 .jumbotron {
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
   border-radius: 0;
 }
 .padding {
@@ -80,7 +83,7 @@ body {
 .welcome {
   width: 75%;
   margin: 0 auto;
-  padding-top: 2rem;
+  padding-top: 0rem;
 }
 .welcome hr {
   border-top: 2px solid #b4b4b4;
@@ -143,16 +146,6 @@ body {
 .ai-google-scholar-square:hover {
   color: #d5d5d5 !important;
 }
-footer {
-  background-color: #3f3f3f;
-  color: #d5d5d5;
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 120%;
-}
-footer h5 {
-  font-size: 150%;
-}
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 50%;
@@ -163,6 +156,12 @@ hr.light {
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
   width: 100%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+hr.light-90 {
+  border-top: 1px solid #d5d5d5;
+  width: 90%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -279,9 +278,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
 
-body {
+.container-fluid {
   max-width: 1000px;
   margin: auto;
+}
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 120%;
+  max-width: 100%;
+}
+footer h5 {
+  font-size: 150%;
 }
 #top_section a {
   padding: 3rem;
@@ -294,36 +304,46 @@ body {
   background-image: url(http://pawelskowronek.me/images/profile.jpg);
   box-shadow: 0px 0px 20px black;
 }
+ul.li-2col-lg {
+  padding-left: 3rem;
+  font-size: 110%;
+}
+.ul-2col-lg {
+  padding-bottom: 0;
+}
 thead {
   font-size: larger;
   font-weight: bold;
 }
 table {
-  text-align: center;
-  vertical-align: center;
   border-collapse: collapse; /* Collapse borders */
   width: 100%; /* Full-width */
-  border: 1px solid #ddd; /* Add a grey border */
+  border: 2px solid #ddd; /* Add a grey border */
 }
 tr {
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 td {
-  border-left: 1px solid #ddd;
+  border: 1px solid #ddd;
+  background-color: white;
+  font-size: 120%;
+  padding: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  background-color: white;
+}
+.pub_tab_col {
+  text-align: center;
+  vertical-align: center;
 }
 th {
-  border-left: 1px solid #ddd;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+  border: 1px solid #ddd;
   cursor: pointer;
   background-color: gray;
+  margin: auto;
+  font-size: 140%;
+  text-align: center;
+  vertical-align: center;
+  padding: 0.5em;
 }
 td:hover,
 th:hover {
@@ -382,13 +402,14 @@ th:hover {
   display: inline;
   margin-left: 0.5em;
 }
-#button_top {
-  border-color: orange;
+.button_top {
   position: fixed;
-  top: 95%;
+  top: 90%;
   left: 95%;
-  width: 1em;
-  border: 1px blue solid;
+  border: 2px bisque solid;
+  background-color: darkslategrey;
   padding: 0.1em;
   margin: 0.1em;
+  font-size: 2em;
+  color: wheat;
 }
