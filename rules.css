@@ -6,15 +6,29 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   padding-top: 2.4rem;
+  font-size: 100%;
+}
+p {
+  font-size: 100%;
+}
+div {
+  padding: 0;
+}
+.display-4 {
+  font-weight: 400;
 }
 .navbar {
   padding: 1rem;
+  opacity: 0.85;
 }
 .navbar-nav li {
   padding-right: 1.4em;
 }
 .nav-link {
-  font-size: 1.2em !important;
+  font-size: 120% !important;
+}
+.navbar:hover {
+  opacity: 1;
 }
 .carousel-inner img {
   width: 100%;
@@ -24,7 +38,10 @@ body {
   background-color: white;
   background-position: center center;
   opacity: 0.3;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 .carousel-caption {
   position: fixed;
@@ -60,22 +77,53 @@ body {
   text-shadow: 1px 1px 10px #000;
   padding-bottom: 1rem;
 }
+#slides {
+  background-color: white;
+}
+#jumbotron {
+  background-color: #a9a9a9;
+  margin-bottom: 1rem;
+}
+#about_me {
+  background-color: #f0f0f0;
+  padding-top: 50px;
+}
+#projects {
+  background-color: #dcdcdc;
+  padding-top: 50px;
+}
+#publications {
+  background-color: #f8f8f8;
+  padding-top: 50px;
+}
+#contact {
+  background-color: #dcdcdc;
+  padding-top: 50px;
+}
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #563d7c;
+  background-color: #fd5949;
+  border: 1px solid black;
 }
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #fd5949;
+  border: 1px solid black;
 }
 .btn-outline-dark {
   background-color: mediumseagreen;
-  border: 1px solid darkgray;
+  border: 1px solid black;
 }
 .jumbotron {
-  padding: 0.5rem;
-  padding-top: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   border-radius: 0;
+  margin-bottom: 0px !important;
+}
+p.lead {
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 110%;
 }
 .padding {
   padding-bottom: 2rem;
@@ -107,8 +155,13 @@ body {
   margin: 1rem;
 }
 .social a {
-  font-size: 4.5em;
+  font-size: 3.5em;
   padding: 3rem;
+}
+.social_1l a {
+  padding: 0.8rem;
+  font-size: 250%;
+  text-align: center;
 }
 .fa-facebook {
   color: #3b5998;
@@ -147,29 +200,41 @@ body {
   color: #d5d5d5 !important;
 }
 hr.light {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 50%;
   margin: 0 auto;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 hr.light-100 {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 100%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 hr.light-90 {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 90%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
+}
+hr.end_br {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0 px !important;
+  margin-bottom: 0 px !important;
+}
+.card {
+  border: 2px solid rgb(129, 129, 129, 1);
+}
+.col {
+  padding-bottom: 1rem;
 }
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social a {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 2rem;
   }
 }
@@ -190,7 +255,7 @@ hr.light-90 {
     padding: 8px 14px;
   }
   .display-4 {
-    font-size: 200%;
+    font-size: 230%;
   }
   .social a {
     font-size: 2.5em;
@@ -212,7 +277,7 @@ hr.light-90 {
     padding: 4px 8px;
   }
   .display-4 {
-    font-size: 160%;
+    font-size: 200%;
   }
   .social a {
     font-size: 2em;
@@ -281,6 +346,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .container-fluid {
   max-width: 1000px;
   margin: auto;
+  border: 10px red;
 }
 footer {
   background-color: #3f3f3f;
@@ -307,6 +373,8 @@ footer h5 {
 ul.li-2col-lg {
   padding-left: 3rem;
   font-size: 110%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .ul-2col-lg {
   padding-bottom: 0;
@@ -326,7 +394,7 @@ tr {
 td {
   border: 1px solid #ddd;
   background-color: white;
-  font-size: 120%;
+  font-size: 110%;
   padding: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
@@ -340,7 +408,7 @@ th {
   cursor: pointer;
   background-color: gray;
   margin: auto;
-  font-size: 140%;
+  font-size: 120%;
   text-align: center;
   vertical-align: center;
   padding: 0.5em;
@@ -348,59 +416,6 @@ th {
 td:hover,
 th:hover {
   background-color: #f1f1f1;
-}
-.profile_fig {
-  width: 400px;
-  border-radius: 50px;
-  float: left;
-  margin-right: 10px;
-}
-.project_img {
-  width: 400px;
-  border-radius: 0px;
-  float: left;
-  margin: 10px;
-}
-.user_name {
-  font-weight: bold;
-}
-.code_fig {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 0px;
-  float: right;
-  margin: 1em;
-}
-#top_sec {
-  font-size: large;
-  margin: 1em;
-}
-.projects {
-  margin: 1em;
-}
-.publications {
-  margin: 1em;
-}
-#initial_explanation {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-.nav {
-  background-color: lightgray;
-  height: 3em;
-}
-.nav ul {
-  padding: 0;
-  margin-left: 0;
-  float: left;
-}
-.nav li {
-  vertical-align: middle;
-  list-style-type: none;
-  padding-left: 0;
-  display: inline;
-  margin-left: 0.5em;
 }
 .button_top {
   position: fixed;
