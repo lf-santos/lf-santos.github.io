@@ -7,14 +7,21 @@ body {
   font-family: "Poppins", sans-serif;
   padding-top: 2.4rem;
 }
+div {
+  padding: 0;
+}
 .navbar {
   padding: 1rem;
+  opacity: 0.85;
 }
 .navbar-nav li {
   padding-right: 1.4em;
 }
 .nav-link {
-  font-size: 1.2em !important;
+  font-size: 120% !important;
+}
+.navbar:hover {
+  opacity: 1;
 }
 .carousel-inner img {
   width: 100%;
@@ -65,6 +72,7 @@ body {
 }
 #jumbotron {
   background-color: #a9a9a9;
+  margin-bottom: 1rem;
 }
 #about_me {
   background-color: #f0f0f0;
@@ -91,9 +99,16 @@ body {
   border: 1px solid darkgray;
 }
 .jumbotron {
-  padding: 0.5rem;
-  padding-top: 1rem;
+  padding-bottom: 0rem;
+  padding-top: 0.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
   border-radius: 0;
+  margin-bottom: 0px !important;
+}
+p.lead {
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .padding {
   padding-bottom: 2rem;
@@ -127,6 +142,10 @@ body {
 .social a {
   font-size: 4.5em;
   padding: 3rem;
+}
+.social_1l a {
+  padding: 1rem;
+  font-size: 250%;
 }
 .fa-facebook {
   color: #3b5998;
@@ -182,6 +201,12 @@ hr.light-90 {
   width: 90%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
+}
+hr.end_br {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0 px !important;
+  margin-bottom: 0 px !important;
 }
 
 /*---Media Queries --*/
@@ -299,6 +324,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 .container-fluid {
   max-width: 1000px;
   margin: auto;
+  border: 10px red;
 }
 footer {
   background-color: #3f3f3f;
@@ -368,9 +394,6 @@ th:hover {
   background-color: #f1f1f1;
 }
 .projects {
-  margin: 1em;
-}
-.publications {
   margin: 1em;
 }
 .button_top {
