@@ -6,9 +6,16 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   padding-top: 2.4rem;
+  font-size: 100%;
+}
+p {
+  font-size: 100%;
 }
 div {
   padding: 0;
+}
+.display-4 {
+  font-weight: 400;
 }
 .navbar {
   padding: 1rem;
@@ -31,7 +38,10 @@ div {
   background-color: white;
   background-position: center center;
   opacity: 0.3;
-  padding: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 .carousel-caption {
   position: fixed;
@@ -87,16 +97,16 @@ div {
   background-color: #dcdcdc;
 }
 .btn-primary {
-  background-color: #6648b1;
-  border: 1px solid #563d7c;
+  background-color: #fd5949;
+  border: 1px solid black;
 }
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #fd5949;
+  border: 1px solid black;
 }
 .btn-outline-dark {
   background-color: mediumseagreen;
-  border: 1px solid darkgray;
+  border: 1px solid black;
 }
 .jumbotron {
   padding-bottom: 0rem;
@@ -109,6 +119,7 @@ div {
 p.lead {
   padding-left: 1em;
   padding-right: 1em;
+  font-size: 110%;
 }
 .padding {
   padding-bottom: 2rem;
@@ -140,12 +151,13 @@ p.lead {
   margin: 1rem;
 }
 .social a {
-  font-size: 4.5em;
+  font-size: 3.5em;
   padding: 3rem;
 }
 .social_1l a {
-  padding: 1rem;
+  padding: 0.8rem;
   font-size: 250%;
+  text-align: center;
 }
 .fa-facebook {
   color: #3b5998;
@@ -184,20 +196,20 @@ p.lead {
   color: #d5d5d5 !important;
 }
 hr.light {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 50%;
   margin: 0 auto;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 hr.light-100 {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 100%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 hr.light-90 {
-  border-top: 1px solid #d5d5d5;
+  border-top: 2px solid #d5d5d5;
   width: 90%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
@@ -208,11 +220,17 @@ hr.end_br {
   margin-top: 0 px !important;
   margin-bottom: 0 px !important;
 }
+.card {
+  border: 2px rgb(0, 0, 0, 1);
+}
+.col {
+  padding-bottom: 1rem;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social a {
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 2rem;
   }
 }
@@ -233,7 +251,7 @@ hr.end_br {
     padding: 8px 14px;
   }
   .display-4 {
-    font-size: 200%;
+    font-size: 230%;
   }
   .social a {
     font-size: 2.5em;
@@ -255,7 +273,7 @@ hr.end_br {
     padding: 4px 8px;
   }
   .display-4 {
-    font-size: 160%;
+    font-size: 200%;
   }
   .social a {
     font-size: 2em;
@@ -351,6 +369,8 @@ footer h5 {
 ul.li-2col-lg {
   padding-left: 3rem;
   font-size: 110%;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 .ul-2col-lg {
   padding-bottom: 0;
@@ -370,7 +390,7 @@ tr {
 td {
   border: 1px solid #ddd;
   background-color: white;
-  font-size: 120%;
+  font-size: 110%;
   padding: 0.5em;
   padding-left: 1em;
   padding-right: 1em;
@@ -384,7 +404,7 @@ th {
   cursor: pointer;
   background-color: gray;
   margin: auto;
-  font-size: 140%;
+  font-size: 120%;
   text-align: center;
   vertical-align: center;
   padding: 0.5em;
