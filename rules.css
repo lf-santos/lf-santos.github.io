@@ -86,15 +86,19 @@ div {
 }
 #about_me {
   background-color: #f0f0f0;
+  padding-top: 50px;
 }
 #projects {
   background-color: #dcdcdc;
+  padding-top: 50px;
 }
 #publications {
   background-color: #f8f8f8;
+  padding-top: 50px;
 }
 #contact {
   background-color: #dcdcdc;
+  padding-top: 50px;
 }
 .btn-primary {
   background-color: #fd5949;
@@ -221,7 +225,7 @@ hr.end_br {
   margin-bottom: 0 px !important;
 }
 .card {
-  border: 2px rgb(0, 0, 0, 1);
+  border: 2px solid rgb(129, 129, 129, 1);
 }
 .col {
   padding-bottom: 1rem;
@@ -412,9 +416,6 @@ th {
 td:hover,
 th:hover {
   background-color: #f1f1f1;
-}
-.projects {
-  margin: 1em;
 }
 .button_top {
   position: fixed;
