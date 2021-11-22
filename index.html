@@ -6,10 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS" />
     <meta
-      name="description"
-      content="some copy that appears on search engine"
+      name="Research website - Lucas F. Santos"
+      content="Improving complex systems via optimization of black-box, simulated models."
     />
-    <title>Lucas F. Santos</title>
+    <title>Research website - Lucas F. Santos</title>
+    <!-- ICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="fig/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fig/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fig/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fig/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fig/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fig/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fig/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fig/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fig/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fig/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fig/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fig/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fig/icons/favicon-16x16.png">
+    <link rel="manifest" href="fig/icons//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -32,21 +51,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <!-- GOOGLE MAP STUFF -->
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="top_sec">
       <!-- NAVIGATION -->
       <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <!--<a href="#" class="navbar-brand"><img src="/fig/graphical_abstract_appEnergy2021.png" alt=""></a>
+          <!--<a href="#" class="navbar-brand"><img src="/fig/icons/android-icon-36x36.png" alt=""></a>
           -->
-          
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
               </li>
@@ -60,7 +97,7 @@
                 <a class="nav-link" href="#publications"><i class="fa fa-fw fa-book"></i> Publications</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i> Contat me</a>
+                <a class="nav-link" href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact me</a>
               </li>
             </ul>
           </div>
@@ -79,8 +116,8 @@
             <div class="carousel-caption">
               <h1 class="display-2">Surrogate-based Simulation Optimization</h1>
               <h3>Very nice research topic</h3>
-              <button type="button" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
+              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -88,8 +125,8 @@
             <div class="carousel-caption">
               <h1 class="display-2">Direct Simulation Optimization</h1>
               <h3>Very nice research topic</h3>
-              <button type="button" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
+              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
             </div>
           </div>
           <div class="carousel-item">
@@ -97,8 +134,8 @@
             <div class="carousel-caption">
               <h1 class="display-2">Multi-objective Simulation Optimization</h1>
               <h3>Very nice research topic</h3>
-              <button type="button" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
+              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
             </div>
           </div>
         </div>
@@ -110,7 +147,7 @@
             <p class="lead">Improving complex systems via optimization of black-box, simulated models</p>
           </div>
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-2 text-center">
-            <a href="page404.html"><button type="button" class="btn btn-outline-secondary btn-md">Learn more!</button></a>
+            <a href="page404.html"><button type="button" target="_blank" class="btn btn-outline-secondary btn-md">Learn more!</button></a>
           </div>
         </div>
       </div>
@@ -122,13 +159,13 @@
           <div class="col-12">
             <h1 class="display-4">About me</h1>
           </div>
-          <hr>
+          <hr class="light-90">
         </div>
         <div class="row">
-          <div class="col-lg-6 text-center">
-            <img src="fig/perfil.jpg" class="img-fluid img_profile" alt="Picture of Lucas F. Santos">
+          <div class="col-md-6 text-center">
+            <img src="fig/perfil.jpeg" class="img-fluid img_profile" alt="Picture of Lucas F. Santos">
           </div>
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <p class="lead">Thanks for stopping by! 
               My name is Lucas Francisco dos Santos. 
               I am a 26-year-old, enthusiastic, young reasearcher, who is trying to contribute to science and technology in the topic of optimization of complex systems.
@@ -137,6 +174,7 @@
               If you are looking for a research collaboration, do not hesitate to contact me on any of the following medias or by <a href="mailto:lfs.francisco.95@gmail.com">email</a>.
               If you are just browsing, please enjoy the content!
             </p>
+            <!--
             <div class="col-12 social_1l align-items-center text-center">
               <a href="https://scholar.google.com.br/citations?user=zG9-V6cAAAAJ&hl=pt-BR&oi=sra" target="blank"><i class="ai ai-google-scholar-square"></i></a>
               <a href="https://www.youtube.com/channel/UCtDDHqKj0a0jpjNwzMgk0hA" target="blank"><i class="fab fa-youtube"></i></a>
@@ -145,13 +183,15 @@
               <a href="https://instagram.com/lucas.francisco.s" target="blank"><i class="fab fa-instagram"></i></a>
               <a href="https://facebook.com/lfchico" target="blank"><i class="fab fa-facebook"></i></a>
             </div>
+            -->
           </div>
         </div>
         <!-- 2-COLUMN RESEARCH & EDUCATION SECTION -->
         <div class="row ul-2col-lg">
           <div class="col-lg-6">
-            <h1 class="display-4 text-center">Education</h1>
-            <hr class="light-100">
+            <div class="li_title">
+              <h1 class="display-4 text-center">Education</h1>
+            </div>
             <ul class="li-2col-lg">
               <li>
                 PhD in Chemical Engineering, Aug 2019 - Present
@@ -170,8 +210,9 @@
             </ul>
           </div>
           <div class="col-lg-6">
-            <h1 class="display-4 text-center">Research Interests</h1>
-            <hr class="light-100">
+            <div class="li_title">
+              <h1 class="display-4 text-center">Research Interests</h1>
+            </div>
             <ul class="li-2col-lg">
               <li>Simulation optimization</li>
               <li>Surrogate-based optimization</li>
@@ -183,26 +224,27 @@
           </div>
         </div>
         <!-- 3-COLUMN SECTION -->
-        <div class="row">
-          <h1 class="display-4 text-center" style="padding-bottom: 0rem; padding-top: 2rem;">Skills</h1>
-          <hr class="light-90">
-        </div>
-        <div class="row text-center">
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <i class="fas fa-code"></i>
-              <h3>Programming</h3>
-              <p>MATLAB, GAMS, C++, Python, HTML, CSS, LaTeX</p>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4">
-              <i class="fas fa-industry"></i>
-              <h3>Process Simulation</h3>
-              <p>Aspen HYSYS, DWSIM, XCOS</p>
-            </div>
-            <div class="col-sm-12 col-md-4">
-              <i class="fas fa-language"></i>
-              <h3>Languages</h3>
-              <p>Portuguese, English, Spanish</p>
-            </div>
+        <div class="col-lg-12">
+          <div class="li_title">
+            <h1 class="display-4 text-center">Skills</h1>
+          </div>
+          <div class="row text-center">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>MATLAB, GAMS, C++, Python, HTML, CSS, LaTeX</p>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-industry"></i>
+                <h3>Process Simulation</h3>
+                <p>Aspen HYSYS, DWSIM, XCOS</p>
+              </div>
+              <div class="col-sm-12 col-md-4">
+                <i class="fas fa-language"></i>
+                <h3>Languages</h3>
+                <p>Portuguese, English, Spanish</p>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -221,19 +263,19 @@
           <div class="col-12">
             <h1 class="display-4">Projects</h1>
           </div>
-          <hr>
+          <hr class="light-90">
         </div>
         <div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
             <div class="col d-flex justify-content-center">
-              <div class="card text-center h-100" style="width: 250px">
+              <div class="card text-center h-100">
                 <img
                   src="./fig/graphical_abstract_appEnergy2021.png"
                   class="card-img"
                   alt="..."
-                  width="250px"
+                  width="360px"
                   style="
-                  height: 140.63px;
+                  height: 196.882px;
                   object-fit: contain
                   "
                 />
@@ -250,7 +292,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card text-center h-100" style="width: 250px">
+              <div class="card text-center h-100">
                 <img
                   src="./fig/simOpt_lowRes.gif"
                   class="card-img"
@@ -276,7 +318,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card text-center h-100" style="width: 250px">
+              <div class="card text-center h-100">
                 <img src="./fig/FIGURE1_new.png" class="card-img" alt="..." />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -293,7 +335,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card text-center h-100" style="width: 250px">
+              <div class="card text-center h-100">
                 <img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="..." />
                 <div class="card-body">
                   <h4 class="card-title">
@@ -310,7 +352,6 @@
               </div>
             </div>
           </div>
-          <a href="#">[Jump to Top]</a>
         </div>
       </div>
     </div>
@@ -321,7 +362,7 @@
           <div class="col-12">
             <h1 class="display-4">Publications</h1>
           </div>
-          <hr>
+          <hr class="light-90">
         </div>
         <table id="publications_table" class="container-fluid">
           <colgroup>
@@ -344,14 +385,14 @@
                   target="_blank"
                   >Mass-transfer driven spinodal decomposition in a ternary
                   polymer solution</a
-                >
-                <div>
+                ><br>
+                <p>
                   DR Tree, LF Dos Santos, CB Wilson, TR Scott, JU Garcia, GH
                   Fredrickson
-                </div>
-                <div>
-                  Soft matter 15 (23), 4614-4628<span class="gs_oph">, 2019</span>
-                </div>
+                </p>
+                <p>
+                  Soft matter 15 (23), 4614-4628, 2019
+                </p>
               </td>
               <td class="pub_tab_col">
                 <a
@@ -361,7 +402,7 @@
                 >
               </td>
               <td class="pub_tab_col">
-                <span class="gsc_a_h gsc_a_hc gs_ibl">2019</span>
+                <span>2019</span>
               </td>
             </tr>
             <tr class="item">
@@ -373,8 +414,8 @@
                   using an MINLP model with a reduced number of decision
                   variables</a
                 >
-                <div>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</div>
-                <div>Applied Energy 262, 114441, 2020</div>
+                <p>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</p>
+                <p>Applied Energy 262, 114441, 2020</p>
               </td>
               <td class="pub_tab_col">
                 <a
@@ -392,12 +433,12 @@
                   target="_blank"
                   >Framework for Embedding Process Simulator in GAMS via Kriging Surrogate Model Applied to C3MR Natural Gas Liquefaction Optimization</a
                 >
-                <div>
+                <p>
                   LF Santos, CBB Costa, JA Caballero, MASS Ravagnani
-                </div>
-                <div>
+                </p>
+                <p>
                   Chemical Engineering Transactions 88, 475-480
-                </div>
+                </p>
               </td>
               <td class="pub_tab_col">
                 0
@@ -414,10 +455,16 @@
                   >Kriging-assisted constrained optimization of single-mixed
                   refrigerant natural gas liquefaction process</a
                 >
-                <div>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</div>
-                <div>Chemical Engineering Science 241, 116699, 2021</div>
+                <p>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</p>
+                <p>Chemical Engineering Science 241, 116699, 2021</p>
               </td>
-              <td class="pub_tab_col">0</td>
+              <td class="pub_tab_col">
+                <a
+                  href="https://scholar.google.com.br/scholar?oi=bibs&hl=en&cites=18376340409791161180"
+                  target="_blank"
+                  >1</a
+                >                
+              </td>
               <td class="pub_tab_col">
                 2021
               </td>
@@ -430,10 +477,16 @@
                   >Design and optimization of energy-efficient single mixed
                   refrigerant LNG liquefaction process</a
                 >
-                <div>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</div>
-                <div>Brazilian Journal of Chemical Engineering, 1-14, 2021</div>
+                <p>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</p>
+                <p>Brazilian Journal of Chemical Engineering, 1-14, 2021</p>
               </td>
-              <td class="pub_tab_col">0</td>
+              <td class="pub_tab_col">
+                <a
+                  href="https://scholar.google.com.br/scholar?oi=bibs&hl=en&cites=279530157788236971"
+                  target="_blank"
+                  >1</a
+                >
+              </td>
               <td class="pub_tab_col">2021</td>
             </tr>
             <tr class="item">
@@ -444,8 +497,8 @@
                   >Search Space Analysis in Work and Heat Exchange Networks
                   Synthesis using MINLP Models</a
                 >
-                <div>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</div>
-                <div>Computer Aided Chemical Engineering 48, 1393-1398, 2020</div>
+                <p>LF Santos, CBB Costa, JA Caballero, MASS Ravagnani</p>
+                <p>Computer Aided Chemical Engineering 48, 1393-1398, 2020</p>
               </td>
               <td class="pub_tab_col">0</td>
               <td class="pub_tab_col">2020</td>
@@ -457,11 +510,11 @@
                   target="_blank"
                   >Diffusion Driven Nonsolvent Induced Phase Separation</a
                 >
-                <div>
+                <p>
                   D Tree, LF Dos Santos, C Wilson, T Scott, JU Garcia, G
                   Fredrickson
-                </div>
-                <div>APS March Meeting Abstracts 2019, C25. 011, 2019 </div>
+                </p>
+                <p>APS March Meeting Abstracts 2019, C25. 011, 2019 </p>
               </td>
               <td class="pub_tab_col">0</td>
               <td class="pub_tab_col">2019</td>
@@ -474,8 +527,8 @@
                   >Modeling the Effects of Mass Transfer on Microstructure
                   Formation in Polymer Membranes</a
                 >
-                <div>D Tree, LF Dos Santos, GH Fredrickson</div>
-                <div>2018 AIChE Annual Meeting, 2018</div>
+                <p>D Tree, LF Dos Santos, GH Fredrickson</p>
+                <p>2018 AIChE Annual Meeting, 2018</p>
               </td>
               <td class="pub_tab_col">0</td>
               <td class="pub_tab_col">2018</td>
@@ -488,9 +541,8 @@
                   >Modeling the Effects of Mass Transfer on Microstructure
                   Formation in Phase-Inversion Membranes</a
                 >
-                <div>D Tree, LF Dos Santos, GH Fredrickson</div>
-                <div>
-                  2017 AIChE Annual Meeting, 2017
+                <p>D Tree, LF Dos Santos, GH Fredrickson</p>
+                <p>2017 AIChE Annual Meeting</p>
               </td>
               <td class="pub_tab_col">0</td>
               <td class="pub_tab_col">2017
@@ -499,16 +551,13 @@
           </tbody>
         </table>
       </div>
-      <div class="container-fluid">
-        <a href="#">[Jump to Top]</a>
-      </div>
       <br> <br>
     </div>
     <button class="button_top" href="#">&#8686;</button>
-    <a href="#"><button type="button" class="button_top btn-lg">
+    <a href="#"><button type="button" target="_blank" class="button_top btn-lg">
       <i class="fas fa-arrow-up"></i>
     </button></a>
-    <!-- CONTACT US -->
+    <!-- CONTACT US 
     <div id="contact">
       <div class="container-fluid padding">
         <div class="row text-center padding">
@@ -518,41 +567,49 @@
             </div>
             <hr>
           </div>
-          <div class="col-12 social padding">
-            <a href="https://facebook.com/lfchico" target="blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/lucas.francisco.s" target="blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCtDDHqKj0a0jpjNwzMgk0hA" target="blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://twitter.com/Lfsfr_" target="blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/lf-santos" target="blank"><i class="fab fa-github"></i></a>
-            <a href="https://scholar.google.com.br/citations?user=zG9-V6cAAAAJ&hl=pt-BR&oi=sra" target="blank"><i class="ai ai-google-scholar-square"></i></a>
-          </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!--  FOOTER  -->
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="col-md-6" style="padding-bottom: 0;">
-            <img src="fig/perfil.jpg" alt="...">
-            <hr class="light">
+          <div class="col-md-4" style="padding-bottom: 0;">
+            <!--
             <p>+55(44)99989-0190</p>
             <p>lfs.francisco.95@gmail.com</p>
             <p>Maringá, Paraná, Brazil.</p>
+            -->
+            <p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29289.30832935589!2d-51.96275865524524!3d-23.418458769456052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ecd132d112fd4f%3A0xd13519b7970bbf44!2sDepartment%20of%20Chemical%20Engineering!5e0!3m2!1sen!2sbr!4v1637615449991!5m2!1sen!2sbr" 
+                width="300" height="200" 
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
           </div>
-          <div class="col-md-6" style="padding-bottom: 0;">
-            <hr class="light">
-            <h5>Menu</h5>
-            <hr class="light">
+          <div class="col-md-8" style="padding-bottom: 0;">
+            <hr class="light-90" style="border-color: antiquewhite;">
+            <h5>Contact us</h5>
+            <hr class="light-90" style="border-color: antiquewhite">
+            <div class="col-12 social padding">
+              <!--<a href="https://facebook.com/lfchico" target="blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://instagram.com/lucas.francisco.s" target="blank"><i class="fab fa-instagram"></i></a>-->
+              <a href="https://scholar.google.com.br/citations?user=zG9-V6cAAAAJ&hl=pt-BR&oi=sra" target="blank"><i class="ai ai-google-scholar-square"></i></a>
+              <a href="https://github.com/lf-santos" target="blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.youtube.com/channel/UCtDDHqKj0a0jpjNwzMgk0hA" target="blank"><i class="fab fa-youtube"></i></a>
+              <a href="https://twitter.com/Lfsfr_" target="blank"><i class="fab fa-twitter"></i></a>
+              <a href="mailto:lfs.francisco.95@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+            <!--
             <a  aria-current="page" href="#"><p><i class="fa fa-fw fa-home"></i> Home</p></a>
             <a  href="#section_projects"><p><i class="fa fa-fw fa-laptop"></i> Projects</p></a>
             <a  href="#section_publications"><p><i class="fa fa-fw fa-book"></i> Publications</p></a>
-            <a  href="mailto:lfs.francisco.95@gmail.com"><p><i class="fa fa-fw fa-envelope"></i> Contat me</p></a>
+            <a  href="mailto:lfs.francisco.95@gmail.com"><p><i class="fa fa-fw fa-envelope"></i> Contact me</p></a>
+            -->
           </div>
           <div class="col-12" style="padding-bottom: 0;">
-            <hr class="light-100">
-            <p>&copy; lf-santo.github.io</p>
+            <hr class="light-100" style="border-color: antiquewhite;">
+            <p>&copy; lf-santos.github.io</p>
           </div>
         </div>
       </div>
