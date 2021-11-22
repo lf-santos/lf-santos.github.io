@@ -303,6 +303,11 @@ hr.end_br {
     font-size: 2em;
     padding: 0.7rem;
   }
+  .social_1l a {
+    padding: 0.7rem;
+    font-size: 200%;
+    text-align: center;
+  }
   body {
     font-size: 80%;
   }
@@ -445,8 +450,8 @@ th:hover {
 }
 .button_top {
   position: fixed;
-  top: 90%;
-  left: 95%;
+  bottom: 1rem;
+  right: 0.5rem;
   border: 2px bisque solid;
   background-color: darkslategrey;
   padding: 0.1em;
