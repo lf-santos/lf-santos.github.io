@@ -6,7 +6,7 @@ body {
   width: 100%;
   font-family: "Poppins", sans-serif;
   padding-top: 2.4rem;
-  font-size: 100%;
+  font-size: 10pt;
 }
 p {
   font-size: 100%;
@@ -19,13 +19,22 @@ div {
 }
 .navbar {
   padding: 1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   opacity: 0.85;
 }
+.navbar-nav {
+  display: flex !important;
+  justify-content: center !important;
+}
 .navbar-nav li {
-  padding-right: 1.4em;
+  padding-right: 1em;
+}
+.nav-item:last-of-type {
+  padding-right: 0;
 }
 .nav-link {
-  font-size: 120% !important;
+  font-size: 110% !important;
 }
 .navbar:hover {
   opacity: 1;
@@ -68,13 +77,13 @@ div {
   font-weight: 500;
   text-transform: uppercase;
   color: black;
-  text-shadow: 1px 1px 5px #000;
+  text-shadow: 1px 1px 5px #6c757d;
 }
 .carousel-caption h3 {
   font-size: 200%;
   font-weight: 400;
   color: black;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 1px 1px 10px #6c757d;
   padding-bottom: 1rem;
 }
 #top_sec {
@@ -126,6 +135,7 @@ p.lead {
   padding-left: 1em;
   padding-right: 1em;
   font-size: 110%;
+  margin-bottom: 0pt;
 }
 .padding {
   padding-bottom: 2rem;
@@ -140,6 +150,13 @@ p.lead {
   width: 95%;
   margin-top: 0.3rem;
   margin-bottom: 1rem;
+}
+.li_title {
+  height: 7.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #b4b4b4;
 }
 .fa-code {
   color: #e54d26;
@@ -158,7 +175,8 @@ p.lead {
 }
 .social a {
   font-size: 3.5em;
-  padding: 3rem;
+  margin: 0rem;
+  padding: 2rem;
 }
 .social_1l a {
   padding: 0.8rem;
@@ -201,6 +219,9 @@ p.lead {
 .ai-google-scholar-square:hover {
   color: #d5d5d5 !important;
 }
+hr {
+  height: 0pt !important;
+}
 hr.light {
   border-top: 2px solid #d5d5d5;
   width: 50%;
@@ -209,15 +230,17 @@ hr.light {
   margin-bottom: 1rem;
 }
 hr.light-100 {
-  border-top: 2px solid #d5d5d5;
+  border-top: 2px solid #343a40;
+  opacity: 0.75;
   width: 100%;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 hr.light-90 {
-  border-top: 2px solid #d5d5d5;
+  border-top: 2px solid #343a40;
+  opacity: 0.75;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
@@ -229,6 +252,7 @@ hr.end_br {
 }
 .card {
   border: 2px solid rgb(129, 129, 129, 1);
+  width: 360px;
 }
 .col {
   padding-bottom: 1rem;
@@ -243,7 +267,7 @@ hr.end_br {
 }
 @media (max-width: 768px) {
   .navbar-nav li {
-    padding-right: 1em;
+    padding-right: 0.6em;
   }
   .nav-link {
     font-size: 100% !important;
@@ -394,12 +418,13 @@ footer h5 {
   padding: 3rem;
 }
 .img_profile {
-  width: 20em;
+  max-width: 30em;
+  max-height: 25em;
   margin: 0 auto;
   margin: 10px;
   border-radius: 50px;
   background-image: url(http://pawelskowronek.me/images/profile.jpg);
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 20px #6c757d;
 }
 ul.li-2col-lg {
   padding-left: 3rem;
@@ -421,6 +446,9 @@ table {
 }
 tr {
   border: 1px solid #ddd;
+}
+tr a {
+  font-size: 110%;
 }
 td {
   border: 1px solid #ddd;
@@ -447,6 +475,14 @@ th {
 td:hover,
 th:hover {
   background-color: #f1f1f1;
+}
+table p {
+  margin-bottom: 0pt;
+  font-style: italic;
+}
+.pub_tab_col a {
+  padding: 30% 60%;
+  margin: -50px;
 }
 .button_top {
   position: fixed;
