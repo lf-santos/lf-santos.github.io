@@ -86,6 +86,10 @@ div {
   text-shadow: 1px 1px 10px #6c757d;
   padding-bottom: 1rem;
 }
+.carousel-caption h1 span,
+h3 span {
+  background-color: white;
+}
 #top_sec {
   background-color: #f8f8f8;
 }
@@ -304,6 +308,9 @@ hr.end_br {
   }
 }
 @media (max-width: 576px) {
+  .nav-link {
+    font-size: 110% !important;
+  }
   .carousel-caption {
     top: 55%;
   }
@@ -418,8 +425,7 @@ footer h5 {
   padding: 3rem;
 }
 .img_profile {
-  max-width: 30em;
-  max-height: 25em;
+  max-height: 20em;
   margin: 0 auto;
   margin: 10px;
   border-radius: 50px;
@@ -494,4 +500,22 @@ table p {
   margin: 0.1em;
   font-size: 2em;
   color: wheat;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  z-index: 99;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 0.4em;
+  border-radius: 0.25em;
+}
+#myBtn:hover {
+  background-color: darkblue;
 }

@@ -51,25 +51,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-
-    <!-- GOOGLE MAP STUFF -->
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -25.344, lng: 131.036 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-    </script>
   </head>
   <body>
     <div id="top_sec">
@@ -114,28 +95,28 @@
           <div class="carousel-item active">
             <img src="fig/graphical_abstract_appEnergy2021.png" alt="Surrogate-based simulation optimization">
             <div class="carousel-caption">
-              <h1 class="display-2">Surrogate-based Simulation Optimization</h1>
-              <h3>Very nice research topic</h3>
+              <h1 class="display-2"><span>Surrogate-based Simulation Optimization</span></h1>
+              <h3><span>Using data-driven models to assist the optimization of black-box simulations.</span></h3>
               <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="fig/FIGURE1_new.png" alt="Direct simulation optimization">
             <div class="carousel-caption">
-              <h1 class="display-2">Direct Simulation Optimization</h1>
-              <h3>Very nice research topic</h3>
+              <h1 class="display-2"><span>Direct Simulation Optimization</span></h1>
+              <h3><span>Using meta-heuristics, derivative-free methods, or gradient-based optimization to problems with black-box simulation embedded.</span></h3>
               <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
             </div>
           </div>
           <div class="carousel-item">
             <img src="fig/pareto.png" alt="Multi-objective simulation optimization">
             <div class="carousel-caption">
-              <h1 class="display-2">Multi-objective Simulation Optimization</h1>
-              <h3>Very nice research topic</h3>
-              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
-              <a href="#contact"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact us!</button></a>
+              <h1 class="display-2"><span>Multi-objective Simulation Optimization</h1>
+              <h3><span>Finding trade-off solutions to competing objectives in black-box simulations.</span></h3>
+              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</span></button>
+              <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
             </div>
           </div>
         </div>
@@ -147,7 +128,7 @@
             <p class="lead">Improving complex systems via optimization of black-box, simulated models</p>
           </div>
           <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-2 text-center">
-            <a href="page404.html"><button type="button" target="_blank" class="btn btn-outline-secondary btn-md">Learn more!</button></a>
+            <a href="#projects"><button type="button" target="_blank" class="btn btn-outline-secondary btn-md">Learn more!</button></a>
           </div>
         </div>
       </div>
@@ -162,18 +143,21 @@
           <hr class="light-90">
         </div>
         <div class="row">
-          <div class="col-md-6 text-center">
+          <div class="col-sm-4 text-center">
             <img src="fig/perfil.jpeg" class="img-fluid img_profile" alt="Picture of Lucas F. Santos">
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-8">
             <p class="lead">Thanks for stopping by! 
               My name is Lucas Francisco dos Santos. 
               I am a 26-year-old, enthusiastic, young reasearcher, who is trying to contribute to science and technology in the topic of optimization of complex systems.
               I am most interested in solving optimization problems with black-box, simulated models embedded using surrogate-based approaches.
               I really believe that this research topic can improve robust and multi-objective engineering decisions aimed to a more sustainable and technological world.
-              If you are looking for a research collaboration, do not hesitate to contact me on any of the following medias or by <a href="mailto:lfs.francisco.95@gmail.com">email</a>.
+              If you are looking for a research collaboration, do not hesitate to contact me by clicking on the following button or by <a href="mailto:lfs.francisco.95@gmail.com">email</a>.
               If you are just browsing, please enjoy the content!
+              <br><br>
+              <a href="#contact_me"><button type="button" target="_blank" class="btn btn-outline-secondary btn-md">Contact me</button></a>
             </p>
+            
             <!--
             <div class="col-12 social_1l align-items-center text-center">
               <a href="https://scholar.google.com.br/citations?user=zG9-V6cAAAAJ&hl=pt-BR&oi=sra" target="blank"><i class="ai ai-google-scholar-square"></i></a>
@@ -269,23 +253,22 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
             <div class="col d-flex justify-content-center">
               <div class="card text-center h-100">
-                <img
+                <a href="./lngProject.html"><img
                   src="./fig/graphical_abstract_appEnergy2021.png"
                   class="card-img"
                   alt="..."
                   width="360px"
                   style="
-                  height: 196.882px;
+                  height: 200.25px;
                   object-fit: contain
                   "
-                />
+                /></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     Surrogate-based simulation optimization
                   </h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Data-driven models replace the expensive-to-evaluate, black-box, simulator-dependent objective and constraints to assist the search of solution to the optimization problem.
                   </p>
                   <a href="./lngProject.html" class="btn btn-primary">Learn more!</a>
                 </div>
@@ -293,11 +276,11 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card text-center h-100">
-                <img
+                <a href="./lngProject.html"><img
                   src="./fig/simOpt_lowRes.gif"
                   class="card-img"
                   alt="..."
-                />
+                  style="height: 200.25px; object-fit: contain;"/></a>
                 <!--
                 <video loop autoplay controls
                 class="card-img"
@@ -308,8 +291,7 @@
                     Direct simulation optimization
                   </h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Meta-heuristics, derivative-free methods, or gradient-based optimization is applied directly to the black-box, simulation optimization problem.
                   </p>
                   <a href="./lngProject.html" class="btn btn-primary"
                     >Learn more!</a
@@ -319,14 +301,14 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card text-center h-100">
-                <img src="./fig/FIGURE1_new.png" class="card-img" alt="..." />
+                <a href="./whenProject.html"><img src="./fig/FIGURE1_new.png" class="card-img" alt="..." 
+                  style="height: 200.25px; object-fit: contain;"/></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    Work and heat exchange networks synthesis
+                    Work and heat exchange networks (WHENs) synthesis
                   </h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Superstructure-derived MINLP models are solved with meta-heurics or mathematical programming to acheive optimal work and heat integration.
                   </p>
                   <a href="./whenProject.html" class="btn btn-primary"
                     >Learn more!</a
@@ -336,14 +318,14 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card text-center h-100">
-                <img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="..." />
+                <a href="./whenProject.html"><img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="NIPS gif" 
+                  style="height: 200.25px; object-fit: contain;"/></a>
                 <div class="card-body">
                   <h4 class="card-title">
                     Nonsolvent-induced Phase Separation (NIPS)
                   </h4>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Model and simulation of microstructure formation in polymers via mass-transfer driven spinodal decomposition in ternary polymer solution.
                   </p>
                   <a href="./whenProject.html" class="btn btn-primary"
                     >Learn more!</a
@@ -398,7 +380,7 @@
                 <a
                   href="https://scholar.google.com.br/scholar?oi=bibs&amp;hl=en&amp;cites=4020809759866515926"
                   target="_blank"
-                  >16</a
+                  >17</a
                 >
               </td>
               <td class="pub_tab_col">
@@ -421,7 +403,7 @@
                 <a
                   href="https://scholar.google.com.br/scholar?oi=bibs&amp;hl=en&amp;cites=3615921409250587934"
                   target="_blank"
-                  >13</a
+                  >14</a
                 >
               </td>
               <td class="pub_tab_col">2020</td>
@@ -528,7 +510,7 @@
                   Formation in Polymer Membranes</a
                 >
                 <p>D Tree, LF Dos Santos, GH Fredrickson</p>
-                <p>2018 AIChE Annual Meeting, 2018</p>
+                <p>2018 AIChE Annual Meeting</p>
               </td>
               <td class="pub_tab_col">0</td>
               <td class="pub_tab_col">2018</td>
@@ -553,10 +535,6 @@
       </div>
       <br> <br>
     </div>
-    <button class="button_top" href="#">&#8686;</button>
-    <a href="#"><button type="button" target="_blank" class="button_top btn-lg">
-      <i class="fas fa-arrow-up"></i>
-    </button></a>
     <!-- CONTACT US 
     <div id="contact">
       <div class="container-fluid padding">
@@ -614,6 +592,29 @@
         </div>
       </div>
     </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
