@@ -103,6 +103,10 @@ h3 span {
   background-color: #f0f0f0;
   padding-top: 50px;
 }
+#code {
+  background-color: #ffff;
+  padding-top: 50px;
+}
 #projects {
   background-color: #dcdcdc;
   padding-top: 50px;
@@ -180,12 +184,16 @@ p.lead {
 .social a {
   font-size: 3.5em;
   margin: 0rem;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 .social_1l a {
   padding: 0.8rem;
   font-size: 250%;
   text-align: center;
+}
+.social img {
+  max-height: 3rem;
+  margin: 0rem;
 }
 .fa-facebook {
   color: #3b5998;
@@ -266,7 +274,10 @@ hr.end_br {
 @media (max-width: 992px) {
   .social a {
     font-size: 3.5em;
-    padding: 2rem;
+    padding: 1.5rem;
+  }
+  .social img {
+    max-height: 3rem;
   }
 }
 @media (max-width: 768px) {
@@ -301,6 +312,10 @@ hr.end_br {
   }
   .social a {
     font-size: 2.5em;
+    padding: 1.2rem;
+  }
+  .social img {
+    max-height: 2.5em;
     padding: 1.2rem;
   }
   body {
@@ -338,6 +353,10 @@ hr.end_br {
     padding: 0.7rem;
     font-size: 200%;
     text-align: center;
+  }
+  .social img {
+    max-height: 2em;
+    padding: 0.7rem;
   }
   body {
     font-size: 80%;

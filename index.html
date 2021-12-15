@@ -51,6 +51,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <!-- LaTeX Stuff -->
+    <link rel="stylesheet" type="text/css" href="http://latex.codecogs.com/css/equation-embed.css" />
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="http://latex.codecogs.com/css/ie6.css" type="text/css"/>
+    <![endif]-->
+    <script type="text/javascript" src="http://latex.codecogs.com/js/eq_config.js" ></script>
+    <script type="text/javascript" src="http://latex.codecogs.com/js/eq_editor-lite-18.js" ></script>
   </head>
   <body>
     <div id="top_sec">
@@ -70,6 +78,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about_me"><i class="fa fa-fw fa-university"></i> About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#code"><i class="fas fa-fw fa-bug"></i></i> Code</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#projects"><i class="fa fa-fw fa-laptop"></i> Projects</a>
@@ -97,7 +108,7 @@
             <div class="carousel-caption">
               <h1 class="display-2"><span>Surrogate-based Simulation Optimization</span></h1>
               <h3><span>Using data-driven models to assist the optimization of black-box simulations.</span></h3>
-              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
+              <a href="#projects"><button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button></a>
               <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
             </div>
           </div>
@@ -106,18 +117,25 @@
             <div class="carousel-caption">
               <h1 class="display-2"><span>Direct Simulation Optimization</span></h1>
               <h3><span>Using meta-heuristics, derivative-free methods, or gradient-based optimization to problems with black-box simulation embedded.</span></h3>
-              <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button>
+              <a href="#projects"><button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</button></a>
               <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="fig/pareto.png" alt="Multi-objective simulation optimization">
+            <img src="./fig/vid_pyDWSIMopt_x4.gif" alt="...">
+            <div class="carousel-caption">
+              <h1 class="display-2"><span>Simulation Optimization Software Development</h1>
+              <h3><span><code class="prettify">pyDWSIMopt</code>: Open-source Python package for DWSIM flowsheet optimization</span></h3>
+              <a href="https://github.com/lf-santos/pyDWSIMopt" target="_blank"><button type="button" class="btn btn-outline-dark btn-lg">Learn more!</span></button></a>
+              <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
+            </div> 
+            <!-- <img src="fig/pareto.png" alt="Multi-objective simulation optimization">
             <div class="carousel-caption">
               <h1 class="display-2"><span>Multi-objective Simulation Optimization</h1>
               <h3><span>Finding trade-off solutions to competing objectives in black-box simulations.</span></h3>
               <button type="button" target="_blank" class="btn btn-outline-dark btn-lg">Learn more!</span></button>
               <a href="#contact_me"><button type="button" target="_blank" class="btn btn-primary btn-lg">Contact me!</button></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -216,7 +234,7 @@
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-code"></i>
                 <h3>Programming</h3>
-                <p>MATLAB, GAMS, C++, Python, HTML, CSS, LaTeX</p>
+                <p>Python, MATLAB, GAMS, C++, LaTeX, HTML, CSS</p>
               </div>
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <i class="fas fa-industry"></i>
@@ -240,6 +258,57 @@
         </div>
       </div>
     </figure> -->
+    <!-- CODE 2-COLUMN -->
+    <div id="code">
+      <div class="container-fluid padding">
+        <div class="row welcome text-center">
+          <div class="col-12">
+            <h1 class="display-4">Code</h1>
+          </div>
+          <hr class="light-90">
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <p class="lead">
+              <h4>Mathematical Background</h4>
+              Although very efficient to describe in details complex systems that would otherwise have to be simplified or approximated, black-box process simulators lack the symbolic formulation of the process model equations 
+              and the analytical derivatives that are useful for optimization, for example <a href="https://doi.org/10.1016/j.ces.2021.116699" target="_blank">[1]</a>.
+              <!--The use of simulation may also introduce noise to the calculations due to convergence and approximations of numerical methods, which can 
+              jeopardize the calculation of accurate approximate derivatives and, therefore, the use of gradient-based optimization methods directly <a href="https://doi.org/10.1002/aic.11579" target="_blank">[1]</a>. 
+              Also, the lack of analytical formulations of the optimization problem prevents the derivation of rigorous upper and lower bounds of the functions that are used for deterministic global optimization
+              <a href="https://doi.org/10.1007/s11590-016-1028-2" target="_blank">[2]</a>. In that sense, -->
+              The optimization models that require simulations to calculate the objective function and/or constraints are often referred to as 
+              simulation optimization problem <a href="https://doi.org/10.1007/s10479-015-2019-x" target="_blank">[2]</a>. A simplified version of this class of problems can be described as to find an 
+              <img src="https://latex.codecogs.com/svg.latex?\mathbf{x}^*\in\mathbb{R}^n" title="\mathbf{x}^*\in\mathbb{R}^n" /> that solves globally the following constrained problem 
+              <br>
+              <img src="https://latex.codecogs.com/svg.latex?\begin{align*}&space;\min_{\mathbf{x}\in\mathcal{D}}\&space;\&space;\&space;&f(\mathbf{x})\\&space;\text{s.t.}\&space;\&space;\&space;&\mathbf{g}(\mathbf{x})\le&space;0&space;\end{align*}" title="\begin{align*} \min_{\mathbf{x}\in\mathcal{D}}\ \ \ &f(\mathbf{x})\\ \text{s.t.}\ \ \ &\mathbf{g}(\mathbf{x})\le 0 \end{align*}" />
+              <br>
+              in which the objective function <img src="https://latex.codecogs.com/svg.latex?f:\mathbb{R}^n\mapsto\mathbb{R}"/>
+              and constraints <img src="https://latex.codecogs.com/svg.latex?g:\mathbb{R}^n\mapsto\mathbb{R}^q"/> are somewhat expensive to calculate, slightly noisy, and black-box functions.
+            </p>
+            <h4>Installation</h4>
+            Install the latest version of <pre class="brush: python">dwsimopt</pre> via pip:
+            <pre class="brush: python">pip install dwsimopt</pre>
+            or
+            <pre class="brush: python">git clone https://github.com/lf-santos/pyDWSIMopt.git<br>cd pyDWSIMopt<br>python setup.py install
+            </pre>
+            <p> 
+              Make sure you have open-source chemical process simulator <a href="https://dwsim.inforside.com.br/new/" target="blank">DWSIM v7.0</a> installed in your machine. Navegate throught the jupyter notebook examples. Use the <code>Simulation</code> class to embed your <code>DMSWIM</code> simulation into Python.
+            </p>
+            <div class="col-12 social">
+              <a href="https://github.com/lf-santos/pyDWSIMopt" target="blank" title="https://github.com/lf-santos/pyDWSIMopt"><i class="fab fa-github"></i></a>
+              <a href="https://pydwsimopt.readthedocs.io/en/latest/" target="blank" title="https://pydwsimopt.readthedocs.io/en/latest/"><img src="./fig/readthedocs-icon.svg" alt="ReadTheDocs-icon"></a>
+              <a href="mailto:lfs.francisco.95@gmail.com" target="blank" title="mailto:lfs.francisco.95@gmail.com"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-6 text-center">
+            <a href="https://github.com/lf-santos/pyDWSIMopt" target="_blank">
+              <img src="/fig/vid_pyDWSIMopt_x4.gif" alt="Gif of pyDWSIMopt in action" style="width: 100%;">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- PROJECTS -->
     <div id="projects">
       <div class="container-fluid padding">
@@ -270,7 +339,7 @@
                   <p class="card-text">
                     Data-driven models replace the expensive-to-evaluate, black-box, simulator-dependent objective and constraints to assist the search of solution to the optimization problem.
                   </p>
-                  <a href="./lngProject.html" class="btn btn-primary">Learn more!</a>
+                  <a href="#publications" class="btn btn-primary">Learn more!</a>
                 </div>
               </div>
             </div>
@@ -293,7 +362,7 @@
                   <p class="card-text">
                     Meta-heuristics, derivative-free methods, or gradient-based optimization is applied directly to the black-box, simulation optimization problem.
                   </p>
-                  <a href="./lngProject.html" class="btn btn-primary"
+                  <a href="#publications" class="btn btn-primary"
                     >Learn more!</a
                   >
                 </div>
@@ -310,7 +379,7 @@
                   <p class="card-text">
                     Superstructure-derived MINLP models are solved with meta-heurics or mathematical programming to acheive optimal work and heat integration.
                   </p>
-                  <a href="./whenProject.html" class="btn btn-primary"
+                  <a href="#publications" class="btn btn-primary"
                     >Learn more!</a
                   >
                 </div>
@@ -318,7 +387,7 @@
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card text-center h-100">
-                <a href="./whenProject.html"><img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="NIPS gif" 
+                <a href="#publications"><img src="./fig/phaseSep_lowRes2.gif" class="card-img" alt="NIPS gif" 
                   style="height: 200.25px; object-fit: contain;"/></a>
                 <div class="card-body">
                   <h4 class="card-title">
@@ -327,7 +396,7 @@
                   <p class="card-text">
                     Model and simulation of microstructure formation in polymers via mass-transfer driven spinodal decomposition in ternary polymer solution.
                   </p>
-                  <a href="./whenProject.html" class="btn btn-primary"
+                  <a href="#publications" class="btn btn-primary"
                     >Learn more!</a
                   >
                 </div>
