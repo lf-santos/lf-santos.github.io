@@ -269,7 +269,9 @@ hr.end_br {
 .col {
   padding-bottom: 1rem;
 }
-
+h1 {
+  font-size: 250%;
+}
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social a {
@@ -298,6 +300,9 @@ hr.end_br {
     font-weight: 400;
     padding-bottom: 0.2rem;
   }
+  h1 {
+    font-size: 250%;
+  }
   h3 {
     font-size: 140%;
     font-weight: 400;
@@ -308,7 +313,7 @@ hr.end_br {
     padding: 8px 14px;
   }
   .display-4 {
-    font-size: 200%;
+    font-size: 250%;
   }
   .social a {
     font-size: 2.5em;
@@ -338,12 +343,15 @@ hr.end_br {
   h3 {
     font-size: 130%;
   }
+  h1 {
+    font-size: 250%;
+  }
   .carousel-caption .btn {
     font-size: 90%;
     padding: 4px 8px;
   }
   .display-4 {
-    font-size: 200%;
+    font-size: 250%;
   }
   .social a {
     font-size: 2em;
